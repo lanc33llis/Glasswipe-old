@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Public Sans", sans-serif; }
+
+body {
+  font: 14px "Public Sans", "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #34283c;
+  color: white; }
+
+header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(52, 40, 60, 0.1); }
+
+.frosted-glass, .card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); }
+
+nav {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 24px;
+  backdrop-filter: blur(5px);
+  max-width: 1800px;
+  height: 70px; }
+  nav div {
+    flex-grow: 1; }
+  nav * {
+    padding: 20px; }
+
+@media screen and (min-width: 1800px) {
+  nav {
+    width: 1800px; }
+  header {
+    display: flex;
+    justify-content: center; } }
+
+h1, h2, h3, h4 {
+  font-variation-settings: 'wght' 100; }
+
+h1, h2 {
+  text-align: center; }
+
+h2 {
+  font-size: 26px;
+  color: #deadff;
+  margin: 0; }
+
+h3 {
+  text-align: center;
+  font-size: 48px; }
+
+.index-splash {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10vh;
+  padding-top: 100px; }
+  .index-splash div {
+    width: 800px; }
+  .index-splash h1 {
+    font-size: 72px;
+    margin: 30px 0;
+    font-variation-settings: 'wght' 300; }
+  .index-splash button {
+    border-radius: 30px;
+    border: none;
+    background: #ce84ff;
+    color: white;
+    font-size: 20px;
+    padding: 15px 35px;
+    margin: 40px; }
+
+.card {
+  height: 500px;
+  width: 500px;
+  margin: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; }
+  .card h4 {
+    text-align: center;
+    font-size: 30px;
+    padding: 15px; }
+  .card .ex {
+    flex-grow: 1;
+    height: auto;
+    background: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: grid;
+    place-items: center; }
+
+.index-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.index-main {
+  padding: 0 15vw; }
+
+.index-more {
+  color: black; }
+  .index-more .content {
+    background: white;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .index-more .fancy {
+    clip-path: polygon(100% 18%, 0 100%, 100% 100%);
+    background: white;
+    width: 100%;
+    height: 150px; }
+  .index-more .blog {
+    width: 50%;
+    height: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 10px; }
+
+/*# sourceMappingURL=index.css.map */

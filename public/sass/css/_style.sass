@@ -1,0 +1,48 @@
+@font-face 
+  font-family: "Public Sans", sans-serif;
+
+$bg-color: #34283c
+
+html, body
+  // height: 100%
+
+body
+  font: 14px "Public Sans", "Lucida Grande", Helvetica, Arial, sans-serif
+  background: $bg-color
+  color: white
+  // background: linear-gradient(red, yellow)
+
+header
+  position: sticky
+  z-index: 1
+  top: 0
+  backdrop-filter: blur(5px)
+  border-bottom: 1px solid transparentize($bg-color, .9)
+.frosted-glass
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5)
+  background: transparentize(white, .9)
+  backdrop-filter: blur(5px)
+  -webkit-backdrop-filter: blur(5px)
+  // border-bottom: 1px solid transparentize(white, .9)
+
+nav 
+  color: white
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  font-size: 24px
+  backdrop-filter: blur(5px)
+  max-width: 1800px
+  div
+    flex-grow: 1
+  height: 70px
+  *
+    padding: 20px
+    
+@media screen and (min-width: 1800px)
+  nav
+    width: 1800px
+  header
+    display: flex
+    justify-content: center
+  

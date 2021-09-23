@@ -1,5 +1,31 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .index-splash
+    div
+      h1 Grade planning made clean and simple
+      h2 Powerful analytics ensures you achieve your target grade
+    button Dashboard
+  .index-main
+    h3 Got questions like...
+    .index-content 
+      .card 
+        h4 What grades do I need on future assignments to get that A?
+        .ex
+          h1 CONTENT
+      .card 
+        h4 What's the lowest score I need on an exam to get an A?
+        .ex
+          h1 CONTENT
+      .card
+        h4 What if I'm sick and fail my homework, can I still get that A?
+        .ex
+          h1 CONTENT
+    h3 Glasswipe will automatically answer these questions as soon as you import your grades
+  .index-more
+    .fancy
+    .content
+      h3 Check out the latest blog!
+      .blog 
+  script(src="js/index.js")
+
